@@ -363,9 +363,6 @@ body{
 
 <div class="hearts" id="hearts"></div>
 
-<audio id="mainSong" loop>
-    <source src="song.mp3" type="audio/mpeg">
-</audio>
 <audio id="zaghrouta">
     <source src="zaghrouta.mp3" type="audio/mpeg">
 </audio>
@@ -449,10 +446,6 @@ btn.addEventListener("mouseover", () => {
 
 /* ===== دخول الموقع ===== */
 btn.addEventListener("click", () => {
-    // تشغيل الأغنية هنا بس لأن المتصفح يحتاج user action
-    const song = document.getElementById("mainSong");
-    song.play().catch(()=>{});
-
     document.getElementById("welcome").style.display = "none";
     document.getElementById("content").style.display  = "block";
 
